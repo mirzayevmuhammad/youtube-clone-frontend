@@ -76,7 +76,7 @@ const Videoparts = () => {
               onClick={() => setCurrenttag(button.value)}
               key={button.id}
               tittle={button.title}
-              classname={`${button.value === currenttag ? "active" : ""}`}
+              classname={`${button.value === currenttag ? "actives" : ""}`}
             />
           );
         })}

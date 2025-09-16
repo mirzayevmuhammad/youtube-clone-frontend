@@ -24,56 +24,56 @@ export const route = createBrowserRouter([
             element: <Subsafterpage />,
           },
           {
-            path: "/liblary",
-            element: <Shortspage />,
+            path: "/you",
+            element: <Subsafterpage />,
           },
           {
             path: "/history",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/trending",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/shopping",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/music",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/movie",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/live",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/gaming",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/news",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/sports",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/learning",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/fashion",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/podcasts",
-            element: <Shortspage />,
+            element: <Subsafterpage />,
           },
           {
             path: "/watch",

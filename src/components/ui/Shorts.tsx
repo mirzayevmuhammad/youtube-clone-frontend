@@ -1,6 +1,7 @@
 import Icon from "./Icons";
 
 const Shorts = () => {
+  
   return (
     <>
       <div className="flex  justify-center ">

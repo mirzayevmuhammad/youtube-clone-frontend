@@ -11,7 +11,6 @@ const Sidebar: React.FC<SidebarProps> = ({ open }) => {
     { title: "Home", icon: <Icon.homeIcon />, path: "/" },
     { title: "Shorts", icon: <Icon.shortsIcon />, path: "/shorts" },
     { title: "Subscriptions", icon: <Icon.subsIcon />, path: "/subscriptions" },
-    { title: "You", icon: <Icon.avaIcon />, path: "/you" },
   ];
 
   const exploreMenus = [
@@ -50,6 +49,28 @@ const Sidebar: React.FC<SidebarProps> = ({ open }) => {
               <span className="text-[10px] mt-1">{menu.title}</span>
             </NavLink>
           ))}
+          <NavLink
+            to="/you"
+            className={({ isActive }) =>
+              `flex flex-col items-center text-[11px] justify-center w-full py-3 hover:bg-[#0000000D] ${
+                isActive ? "bg-[#0000000D] text-[#000]" : "text-[#000]"
+              }`
+            }
+          >
+            <Icon.avabIcon />
+            You
+          </NavLink>
+          <NavLink
+            to="/history"
+            className={({ isActive }) =>
+              `flex flex-col items-center text-[11px]  justify-center w-full py-3 hover:bg-[#0000000D] ${
+                isActive ? "bg-[#0000000D] text-[#000]" : "text-[#000]"
+              }`
+            }
+          >
+            <Icon.historyIcon />
+            History
+          </NavLink>
         </ul>
       ) : (
         <div className="overflow-y-auto h-full pb-10">
@@ -74,11 +95,11 @@ const Sidebar: React.FC<SidebarProps> = ({ open }) => {
 
           <div className="border-b p-[12px] border-[#0000000D]">
             <NavLink
-              to="/library"
+              to="/you"
               className="p-[8px_10px] rounded-[10px] pl-[17px] flex items-center gap-x-[15px] w-full text-[15px] font-semibold hover:bg-[#0000000D]"
             >
-              <Icon.libIcon />
-              Library
+              <Icon.avabIcon />
+              You
             </NavLink>
             <NavLink
               to="/history"
@@ -116,5 +137,3 @@ const Sidebar: React.FC<SidebarProps> = ({ open }) => {
 };
 
 export default Sidebar;
-
-

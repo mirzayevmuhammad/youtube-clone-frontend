@@ -7,19 +7,15 @@ interface Videoparts {
   hour: string;
 }
 
-const Video = ({}: Videoparts) => {
+const SmallVideo = ({}: Videoparts) => {
   return (
     <>
       <>
-        <div className="flex flex-col min-w-[435px]  ">
-          <div className="w-full bg-[#0000001A] rounded-[13px] h-[245px]"></div>
+        <div className="flex  min-w-[600px] gap-x-2 ">
+          <div className="w-[75%] bg-[#0000001A] rounded-[13px] h-[175px]"></div>
           <div className="flex pt-[19px]">
-            <div className="w-[44px] h-[44px] mr-[17px] rounded-full bg-[#0000001A]"></div>
-            <div className="flex flex-col ">
-              <span
-                id="tittle"
-                className="max-w-[315px] mb-1.5 text-[17px] font-bold"
-              >
+            <div className="flex flex-col gap-y-2">
+              <span id="tittle" className=" mb-1.5 text-[17px] font-bold">
                 Stremerlar bilan mafia oynemiz hamma kirsin
               </span>
               <span id="name">Suyunbe Stream</span>
@@ -34,4 +30,4 @@ const Video = ({}: Videoparts) => {
   );
 };
 
-export default Video;
+export default SmallVideo;
