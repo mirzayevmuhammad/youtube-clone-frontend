@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Icon from "./ui/Icons";
 import Search from "./ui/Search";
 import Signinbutton from "./ui/Signinbutton";
@@ -8,9 +9,23 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ open, setOpen }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header className=" fixed w-full flex justify-between px-[16px] ">
+      <header
+        className={`fixed w-full flex justify-between px-[16px] transition-all duration-300 ${
+          scrolled ? "backdrop-blur-md bg-white/70 " : ""
+        }`}
+      >
         <div className="flex items-center gap-x-[25px] py-[21px] pl-[11px] pr-[23px]">
           <button onClick={() => setOpen(!open)}>
             <Icon.menuIcon />

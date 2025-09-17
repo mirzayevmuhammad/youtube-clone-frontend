@@ -36,7 +36,8 @@ const Homepage = () => {
   return (
     <>
       <div className="pl-[15px] flex gap-x-5 flex-wrap">
-        {videos.map((video) => (
+      <Video description="" url="" hour="" img="" name="" view=""/>
+        {/* {videos.map((video) => (
           <a key={video.id} href={`/watch/${video.id}`}>
             <Video
               description={video.description || ""}
@@ -47,7 +48,7 @@ const Homepage = () => {
               view={(video.viewsCount || 0).toString()}
             />
           </a>
-        ))}
+        ))} */}
       </div>
     </>
   );

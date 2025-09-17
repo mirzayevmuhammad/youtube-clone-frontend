@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Icon from "./ui/Icons";
 import Signinbutton from "./ui/Signinbutton";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 interface SidebarProps {
   open: boolean;
@@ -114,7 +115,9 @@ const Sidebar: React.FC<SidebarProps> = ({ open }) => {
             <span className="text-[14px] text-[#0F0F0F]">
               Sign in to like videos, comment, and subscribe.
             </span>
-            <Signinbutton />
+            <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+              <Signinbutton />
+            </GoogleOAuthProvider>
           </div>
 
           <span className="pl-5 text-[17px]">Explore</span>

@@ -27,7 +27,6 @@ const RootLayout = () => {
         </div>
       </div>
 
-      {/* Drawer faqat watch sahifasi uchun */}
       {isWatch && (
         <div
           className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${

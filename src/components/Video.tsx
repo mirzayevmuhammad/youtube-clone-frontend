@@ -11,7 +11,7 @@ const Video = ({}: Videoparts) => {
   return (
     <>
       <>
-        <div className="flex flex-col min-w-[435px]  ">
+        <a href="/watch" className="flex flex-col min-w-[435px]  ">
           <div className="w-full bg-[#0000001A] rounded-[13px] h-[245px]"></div>
           <div className="flex pt-[19px]">
             <div className="w-[44px] h-[44px] mr-[17px] rounded-full bg-[#0000001A]"></div>
@@ -28,7 +28,7 @@ const Video = ({}: Videoparts) => {
               </h1>
             </div>
           </div>
-        </div>
+        </a>
       </>
     </>
   );
