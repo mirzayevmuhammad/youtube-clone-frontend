@@ -17,13 +17,11 @@ const Homepage = () => {
 
   async function fetchData() {
     try {
-      console.log("am");
-
       let res = await api.get("/video/feed/videos", {
         params: {
           limit: 10,
           page: 1,
-          categoryId: "", // agar categoryId kerak bo‘lmasa yubormasa ham bo‘ladi
+          categoryId: "",
         },
       });
 
