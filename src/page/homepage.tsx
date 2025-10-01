@@ -25,12 +25,11 @@ const Homepage = () => {
         },
       });
 
-      console.log(res, "am2");
       if (res.data && res.data.success) {
         setVideos(res.data.data as VideoType[]);
       }
     } catch (error) {
-      console.error("Xatolik:", error);
+      console.error("Error!:", error);
     }
   }
 
